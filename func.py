@@ -217,10 +217,12 @@ def some(c, c1, task_var):
                         workers.append(j)
                         # mass =[]
                         mass = [i, j, c1[i][j]]
+                        # print(work[i][2])
                         # mass.append(mass)
                         work.append(mass)
             end_answer = 0
             for i in range(0, len(c)):
+                print(work[i][2])
                 end_answer += work[i][2]
                 print('Работа ', work[i][0] + 1, ' -> исполнитель ', work[i][1] + 1)
 
